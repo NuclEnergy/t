@@ -15,9 +15,22 @@
   "license": "MIT",
   "author": "Jiaxiang Zhang",
   "exports": {
-    "macros": "dist/macros/index.js",
-    "tconfig": "dist/tconfig.js",
-    "types": "dist/types.js"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./macros": {
+      "import": "./dist/macros/index.js",
+      "types": "./dist/macros/index.d.ts"
+    },
+    "./tconfig": {
+      "import": "./dist/tconfig.js",
+      "types": "./dist/tconfig.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "types": "./dist/types.d.ts"
+    }
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
