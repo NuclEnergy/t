@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "strict": true,
+        "module": "ESNext",
+        "declaration": true,
+        "outDir": "./dist",
+        "moduleResolution": "node"
+    },
+    "exclude": [
+        "node_modules",
+        "./dist/**/*",
+        "./examples",
+        "./test"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@nucl/t",
+  "version": "0.1.0",
+  "description": "A translation function library for your projects.",
+  "keywords": [
+    "t",
+    "translation",
+    "i18n",
+    "nextjs",
+    "react",
+    "l10n",
+    "localization"
+  ],
+  "homepage": "https://github.com/NuclEnergy/t",
+  "license": "MIT",
+  "author": "Jiaxiang Zhang",
+  "exports": {
+    "macros": "dist/macros/index.js",
+    "tconfig": "dist/tconfig.js",
+    "types": "dist/types.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
