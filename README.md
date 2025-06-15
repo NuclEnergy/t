@@ -12,7 +12,7 @@ A translation function library for your projects.
 ## Installation
 
 ```bash
-pnpm add @nucl/t
+pnpm add @nuclenergy/t
 ```
 
 ## Install the T-CLI tool (optional, but recommended)
@@ -29,7 +29,7 @@ pnpm add @nucl/t
 Create a `t.config.ts` file in your project root:
 
 ```typescript
-import { TConfig } from "@nucl/t/tconfig";
+import { TConfig } from "@nuclenergy/t/tconfig";
 
 const config = {
   languages: {
@@ -57,13 +57,13 @@ export default config;
 You can use the following object temporarily. The `t-cli` tool will automatically collect all translation keys.
 
 ```typescript
-import { t } from "@nucl/t/macros";
+import { t } from "@nuclenergy/t/macros";
 ```
 
 #### TypeScript/Node
 
 ```typescript
-import { t } from "@nucl/t/macros";
+import { t } from "@nuclenergy/t/macros";
 
 function main() {
   return t("Hello, World!");
@@ -73,7 +73,7 @@ function main() {
 #### React/Next.js (App Router)
 
 ```tsx
-import { t } from "@nucl/t/macros";
+import { t } from "@nuclenergy/t/macros";
 
 export default async function App() {
   return <h1>{t("Hello, World!")}</h1>;
@@ -141,13 +141,13 @@ As this project is still under development, the replacement functionality is not
 Replace this line:
 
 ```typescript
-import { t } from "@nucl/t/macros";
+import { t } from "@nuclenergy/t/macros";
 ```
 
 With:
 
 ```typescript
-import { createT } from "@nucl/t";
+import { createT } from "@nuclenergy/t";
 import { _t } from "./_t";
 
 const t = createT(_t[lang]);
@@ -158,7 +158,7 @@ Here is the final code example:
 #### TypeScript/Node
 
 ```typescript
-import { createT } from "@nucl/t";
+import { createT } from "@nuclenergy/t";
 import { _t } from "./_t";
 import { Language } from "../t.config";
 
@@ -172,7 +172,7 @@ function main() {
 #### React/Next.js (App Router)
 
 ```tsx
-import { createT } from "@nucl/t";
+import { createT } from "@nuclenergy/t";
 import { _t } from "./_t";
 import { Language } from "../t.config";
 
