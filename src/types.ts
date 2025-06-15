@@ -2,9 +2,9 @@ import { LanguageNode, TConfig } from "./tconfig";
 
 export type Dictionary = { [key: string]: string | Dictionary };
 
-export type TranslationFunction<T extends Dictionary> = <K extends keyof T>(
+export type TranslationFunction<D extends Dictionary> = <K extends keyof D>(
   key: K,
-  vars?: Record<string, string | number>
+  ...args: VarsFor<K>
 ) => string;
 
 export type Dictionaries<T extends TConfig> = {
@@ -31,9 +31,7 @@ type ExtractLanguagesFromArray<T extends LanguageNode[]> = T extends [
       | (Tail extends LanguageNode[] ? ExtractLanguagesFromArray<Tail> : never)
   : never;
 
-export type AllLanguages<T extends TConfig> = ExtractLanguages<
-  T["languages"]
->;
+export type AllLanguages<T extends TConfig> = ExtractLanguages<T["languages"]>;
 
 export type ExtractVars<T> = T extends string
   ? T extends `${infer _Start}{{${infer Var}}}${infer Rest}`
