@@ -200,6 +200,11 @@ Language detection and management are not provided out-of-the-box to avoid extra
 
 ---
 
+## Examples
+
+- [Basic](https://github.com/NuclEnergy/t/tree/main/examples/basic)
+- [Next.js](https://github.com/NuclEnergy/t/tree/main/examples/next-app)
+
 ## License
 
 MIT. See [LICENSE](LICENSE) for details.

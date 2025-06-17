@@ -1,0 +1,19 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@nuclenergy/t": "0.1.1"
+  },
+  "main": "dist/main.js",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "eslint": "^9",
+    "typescript": "^5",
+    "vite": "^6.3.5"
+  }
+}
