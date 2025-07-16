@@ -73,7 +73,7 @@ function main() {
 #### React/Next.js (App Router)
 
 ```tsx
-import { t } from "@nuclenergy/t/macros";
+import { t } from "@nuclenergy/t/react/macros";
 
 export default async function App() {
   return <h1>{t("Hello, World!")}</h1>;
@@ -172,7 +172,7 @@ function main() {
 #### React/Next.js (App Router)
 
 ```tsx
-import { createT } from "@nuclenergy/t";
+import { createT } from "@nuclenergy/t/react";
 import { _t } from "./_t";
 import { Language } from "../t.config";
 

@@ -30,6 +30,10 @@
     "./types": {
       "import": "./dist/types.js",
       "types": "./dist/types.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
     }
   },
   "main": "dist/index.js",
@@ -41,9 +45,9 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "typescript": "^5"
+    "typescript": "^5",
+    "@types/react": "^19"
   },
-  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=20"
   }
