@@ -1,5 +1,5 @@
-import { LanguageNode, TConfig } from "../tconfig";
-import { AllLanguages } from "../types";
+import { LanguageNode, TConfig } from "@/tconfig";
+import { AllLanguages } from "@/types";
 
 export const extract_languages_from_config = <T extends TConfig>(
   config: T
