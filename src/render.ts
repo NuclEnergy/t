@@ -1,4 +1,4 @@
-const PARAM_REGEX = /\{\{(\w+)\}\}/g;
+const PARAM_REGEX = /\{\{(.+?)\}\}/g;
 
 export const renderTemplate = (
   template: string,
@@ -6,11 +6,10 @@ export const renderTemplate = (
 ): string => {
   return template.replace(PARAM_REGEX, (_, key) => {
     if (key in vars) {
-      const value = vars[key].toString();
-      return value;
+      return vars[key] as string;
     } else {
       console.warn(`Missing value for variable: ${key}`);
-      return `#${key}`;
+      return `[${key}]`;
     }
   });
 };
