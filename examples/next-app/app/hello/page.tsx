@@ -1,4 +1,4 @@
-import { createT } from "@nuclenergy/t";
+import { createT } from "@nuclenergy/t/react";
 import { Language } from "@/t.config";
 import { ClientSide } from "./client_side";
 import { _t } from "./_t";

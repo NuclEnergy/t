@@ -1,5 +1,5 @@
-import { Dictionary, VarsFor } from "@/types";
-import { renderTemplate } from "@/react/render";
+import { Dictionary, VarsFor } from "../types";
+import { renderTemplate } from "./render";
 
 export const createT = <D extends Dictionary>(dictionary: D) => {
   const t = <K extends keyof D>(

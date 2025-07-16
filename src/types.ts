@@ -1,4 +1,4 @@
-import { LanguageNode, TConfig } from "@/tconfig";
+import { LanguageNode, TConfig } from "./tconfig";
 
 export type Dictionary = { [key: string]: string | Dictionary };
 

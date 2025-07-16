@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@nuclenergy/t": "0.2.0"
+    "@nuclenergy/t": "file:../../"
   },
   "main": "dist/main.js",
   "devDependencies": {

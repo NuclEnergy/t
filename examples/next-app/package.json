@@ -9,8 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@nuclenergy/t": "0.2.0",
-    "next": "15.4.0-canary.83",
+    "@nuclenergy/t": "file:../../",
+    "next": "15.4.2-canary.4",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

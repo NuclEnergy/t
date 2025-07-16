@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { createT } from "@nuclenergy/t";
+import { createT } from "@nuclenergy/t/react";
 import { Language } from "@/t.config";
 import { _t } from "./_t";
 
