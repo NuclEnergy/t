@@ -1,4 +1,4 @@
-import { Dictionary, VarsFor } from "../types";
+import { Dictionary, VarsFor } from "./types";
 import { renderTemplate } from "./render";
 
 export const createT = <D extends Dictionary>(dictionary: D) => {
@@ -22,5 +22,5 @@ export const createT = <D extends Dictionary>(dictionary: D) => {
   return t;
 };
 
-export * from "../types";
+export * from "./types";
 export * from "../utils";
