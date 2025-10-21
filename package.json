@@ -1,6 +1,6 @@
 {
   "name": "@nuclenergy/t",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "description": "A translation function library for your projects.",
   "keywords": [
