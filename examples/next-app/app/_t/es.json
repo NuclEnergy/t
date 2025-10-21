@@ -1,9 +1,7 @@
 {
-  "Deploy now": "Desplegar ahora",
-  "Examples": "Ejemplos",
-  "Get started by editing": "Comienza editando",
-  "Go to nextjs.org →": "Ir a nextjs.org →",
-  "Learn": "Aprender",
-  "Read our docs": "Leer nuestros documentos",
-  "Save and see your changes instantly.": "Guarda y ver tus cambios instantáneamente."
+  "Hello, World!": "Hola, Mundo!",
+  "I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.": "Tengo un sueño: que un día mis cuatro hijos vivan en una nación donde no serán juzgados por el color de su piel, sino por el contenido de su carácter.",
+  "I have a dream that one day this nation will rise up and live out the true meaning of its creed:": "Tengo un sueño: que un día esta nación se levante y viva el verdadero significado de su credo:",
+  "I have a dream today.": "Hoy tengo un sueño.",
+  "“We hold these truths to be self-evident, that all men are created equal.”": "“Sostenemos que estas verdades son evidentes por sí mismas: que todos los hombres son creados iguales.”"
 }

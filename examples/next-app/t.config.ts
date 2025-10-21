@@ -46,6 +46,27 @@ const config = {
           },
         ],
       },
+      {
+        name: "fr",
+      },
+      {
+        name: "de",
+      },
+      {
+        name: "it",
+      },
+      {
+        name: "pt",
+      },
+      {
+        name: "jp",
+      },
+      {
+        name: "kr",
+      },
+      {
+        name: "ru",
+      },
     ],
   },
   targets: [
