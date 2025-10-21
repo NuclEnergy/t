@@ -32,5 +32,28 @@ export const renderTemplate = (
     result.push(template.slice(lastIndex));
   }
 
-  return result;
+  // Merge adjacent strings to minimize React's separator artifacts in HTML output
+  const merged: React.ReactNode[] = [];
+  for (const node of result) {
+    const last = merged[merged.length - 1];
+    if (typeof last === "string" && typeof node === "string") {
+      merged[merged.length - 1] = (last as string) + node;
+    } else {
+      merged.push(node);
+    }
+  }
+
+  if (merged.length === 0) {
+    return "";
+  }
+
+  if (merged.every((n) => typeof n === "string")) {
+    return merged.join("");
+  }
+
+  if (merged.length === 1) {
+    return merged[0]!;
+  }
+
+  return React.createElement(React.Fragment, null, ...merged);
 };
