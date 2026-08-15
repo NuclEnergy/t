@@ -1,6 +1,6 @@
 {
   "name": "@nuclenergy/t",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "description": "A translation function library for your projects.",
   "keywords": [
@@ -35,6 +35,10 @@
     "./react": {
       "import": "./dist/react/index.js",
       "types": "./dist/react/index.d.ts"
+    },
+    "./react/macros": {
+      "import": "./dist/react/macros/index.js",
+      "types": "./dist/react/macros/index.d.ts"
     }
   },
   "main": "dist/index.js",
